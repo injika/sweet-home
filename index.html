@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sweet Home</title>
+    </head>
+    <body>
+      <header> <div class="header-left">
+        <h2 class="logo-link"><a href="https://injialasttal.com" class="logo-link">Inji Alasttal </a></h2>
+      </header>
+
+      <img src="images/background.webp" alt="mobile" class="responsive1">
+
+    <div class="container">
+      <h1 class="h1">SWEET HOME </h1>
+<p class="paragraph">
+  SWEET HOME is a real estate website that helps users search for an apartment for rent, buy new properties, and sell their properties as investments.
+<br>
+  Deliverables: User research report. Affinity map. Task flows. Wireframe. UI. Prototype.
+  <br> Role: Product Designer. Duration: One week
+</p>
+
+     <h2>Challenge</h2>
+     <p>Create a real estate website that helps users rent, sell, and buy real estate. Also, have an attractive home page and be responsive to all devices.</p>
+
+         <br>
+         <h2>Goals</h2>
+         <ul>
+        <li>Design the web app to create a professional, trustworthy, and friendly user experience.</li>
+        <li>Optimize the web experience on mobile devices;</li>
+        <li>Create an easy and flowy web navigation between pages;</li>
+        <li>Save and remove properties easily, or contact to make an appointment.</li>
+         </ul>
+         <img src="images/Frame.webp" alt="Nature" class="responsive">
+
+         <h1 class="h1">Define</h1>
+         <h2>problem</h2>
+         <p>Many people are looking for an apartment in a specific country or region, whether furnished
+           or not, and they are also looking for a buyer for their property or even to buy a new property for investment or as a cozy home. On the Sweethome website, users will find what they need.</p>
+
+              <br>
+              <h2>Solution </h2>
+              <p>
+                I created a responsive web app to let users easily use it on their desks, at work, at home, 
+                or anywhere to find their dream house or apartment, take an appointment, or check the availability of their favorite properties to rent or buy.
+             </p>
+             <br>
+             <h2>Empathise </h2>
+              <p>
+                During the research phase, I conducted a competitor analysis, a business analysis, and a sitemap.
+                 I was able to gain a thorough understanding of the market, potential customers, and key real estate requirements. I created a personas to collect data and conduct research based on it.
+             </p>
+
+             <img src="images/Nadia.webp" alt="Nature" class="responsive">
+
+
+                <br>
+                <br>
+                <section class="ideation"><h1>IDEATION</h1>
+                <p>For a user research, I conducted a study and created the personas to analyze pain points and determine priorities. Then I generated Sitemap to understand where in the process users were having troubles, created sketches, Lo-Fi and Hi-Fi prototypes.
+
+                  The project timeline is one week. Let’s dive into the process of creating a responsive website.</p>
+                </section>
+                <br>
+                
+
+                <h2>Sitemap 
+                </h2>
+                <p>In the site map, i’ll make sure to uncover a seamless user experience with a sitemap designed for flow. From new homes to rent and buy proprties, you can easily navigate through our intuitive interface.
+
+                </p>
+                <img src="images/sitemap.webp" alt="Nature" class="responsive">
+              
+                
+                <h2>Low-Fi Prototype:</h2>
+                <p>I fleshed out the UI sketches, created low-fi wireframes, and got down the clickable prototype for validation testing. I conducted validation testing, and found out a couple of issues need
+                   to be adjusted. For example, to make filters more prominent on the landing page so it can give user a clear signal that it is the primary call to action.</p>
+                          
+                   <img src="images/lofi.webp" alt="Nature" class="responsive">
+
+                <br>
+                <h2>Hi-Fi Prototype:</h2>
+                <p>After validating my Lo-Fi prototype, I made iterations to my design and moved into the Hi-Fi phase. I created a Hi-Fi prototype for the site’s flow, including an animated background, photos of the proprites, detiels, Navigation Bar and easy searching on the sities.
+
+                </p>
+                <img src="images/hifi.webp" alt="Nature" class="responsive">
+               
+ 
+                <br>
+                <h1>Validation
+                </h1>
+                <h2>Responsive design
+                </h2>
+                <p>The web is now mainly accessed from mobile & tablet devices, so i made sure that the website content is properly displayed on them.</p>
+                <br>
+                <img src="images/phone1.png" alt="" class="responsive1">
+                <br>
+
+                <p>I made a GIF photos to show you the validation of the site. It works fantastic, and I loved the animated background, which gives the site a more attractive look. Also, having easy-to-use navigation is important for any web site, from choosing what you are looking for to the location, makes every step clear and easy to flow.</p>
+
+                <img src="images/sweethome.gif" alt="" class="responsive1">
+
+                <h1 class="con"> Conclusion:
+                </h1>
+                <p class="end">This project as a UI designer has been an incredibly fulfilling adventure, and I’m filled with pride and gratitude for the vital lessons I’ve learned along the way. Each day in this role has become a stepping stone towards my professional advancement over the last month, as I continue to use and refine the abilities I’ve learned in real-world circumstances. Notably, I took on the challenge of animating the background in this project, bringing a dynamic and visually interesting element into the user experience and a responsive web app. This endeavor culminated in the successful design of a website that not only meets practical needs but also displays a distinct and innovative look.</p>
+                    <h2><a href="https://injialasttal.com" class="logo-link">Inji Alasttal</a></h2>
+
+                <script>
+                let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+// Automatic slideshow
+let slideInterval = setInterval(function() {
+  plusSlides(1); // Simulate a click on the next button
+}, 3000); // Change slide every 3 seconds (adjust as needed)
+
+
+//slider2
+
+                
+                </script>
+    </div></body>
+</html>
